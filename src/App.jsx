@@ -5,6 +5,7 @@ import Admin from './Dashboard/Admin'
 import Employee from './Dashboard/Employee'
 import { authContext } from './Auth/Auth'
 
+saveToLocalStorage();
 
 const App = () => {
   const data = useContext(authContext);
