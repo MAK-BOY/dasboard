@@ -4,6 +4,7 @@ import Login from './components/Login'
 import Admin from './Dashboard/Admin'
 import Employee from './Dashboard/Employee'
 import { authContext } from './Auth/Auth'
+import { saveToLocalStorage } from './utils/Localstorage'
 
 saveToLocalStorage();
 
