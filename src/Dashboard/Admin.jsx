@@ -3,7 +3,7 @@ import { authContext } from '../Auth/Auth'
 
 const Admin = () => {
 
-    const data = useContext(authContext); // ✅ yahan laao
+    const data = useContext(authContext); 
 
     const [title, settitle] = useState("")
     const [date, setdate] = useState("")
@@ -13,12 +13,13 @@ const Admin = () => {
 
     const submit = (e) => {
         e.preventDefault();
+        
 
         const log = JSON.parse(localStorage.getItem("employees")) || [];
 
         log.forEach(emp => {
             if (emp.id == assignTo) {
-                emp.tasks.list.push({
+                emp.list.push({
                     title,
                     status: "Pending",
                     deadline: date
@@ -28,14 +29,15 @@ const Admin = () => {
             }
         });
 
+        // reset
         localStorage.setItem("employees", JSON.stringify(log));
 
-        // reset
         settask(null);
         settitle("");
         setdate("");
         setassignTo("");
         setcategory("");
+
     }
 
     return (
@@ -43,7 +45,7 @@ const Admin = () => {
             <div id="dashboard">
 
                 <aside id="sidebar">
-                    <h2 id="logo">{data?.admin?.name}</h2>
+                    <h2 id="logo">{data.admin[0].name}</h2>
                     <ul id="menu">
                         <li>Dashboard</li>
                     </ul>
@@ -93,7 +95,7 @@ const Admin = () => {
                                 onChange={(e) => setcategory(e.target.value)}
                             />
 
-                            <button type="submit">Add Task</button>
+                            <button id="btn" type="submit">Add Task</button>
                         </form>
                     </section>
 

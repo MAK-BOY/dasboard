@@ -4,25 +4,24 @@ import Login from './components/Login'
 import Admin from './Dashboard/Admin'
 import Employee from './Dashboard/Employee'
 import { authContext } from './Auth/Auth'
-import { saveToLocalStorage } from './utils/Localstorage'
+import { getFromLocalStorage, saveToLocalStorage } from './utils/Localstorage'
 
-saveToLocalStorage();
 
 const App = () => {
   const data = useContext(authContext);
-  // useEffect(() => {
-  //   if (data) {
-  //     const loggedInUser = localStorage.getItem("loggedInUser");
+  useEffect(() => {
+    if (data) {
+      const loggedInUser = localStorage.getItem("loggedInUser");
 
-  //     if (loggedInUser) {
-  //       setuser(loggedInUser.role);
-  //     }}
-  //   }, [data])
+      if (loggedInUser) {
+        setuser(loggedInUser.role);
+      }}
+    }, [data])
 
   const [user, setuser] = useState(null);
   const [logedinuser, setlogedinuser] = useState(null);
   const handleLogin = (email, password) => {
-    if (data && data.admin.email === email && data.admin.password === password) {
+    if (data && "admin@aman.com" === email && "admin123" === password) {
       setuser({ role: "admin" });
       localStorage.setItem("loggedInUser", JSON.stringify({ role: "admin" }));
     } else if (data) {

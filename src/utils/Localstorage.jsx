@@ -9,17 +9,17 @@
     role: "employee",
     department: "Development",
     attendance: "92%",
+    list: [
+      { title: "Build Login UI", status: "Completed", deadline: "20 Apr" },
+      { title: "API Integration", status: "Pending", deadline: "22 Apr" },
+      { title: "Fix Bugs", status: "Completed", deadline: "18 Apr" },
+      { title: "Dashboard UI", status: "Pending", deadline: "25 Apr" },
+      { title: "Code Review", status: "Completed", deadline: "17 Apr" }
+    ],
     tasks: [{
       total: 5,
       completed: 3,
       pending: 2,
-      list: [
-        { title: "Build Login UI", status: "Completed", deadline: "20 Apr" },
-        { title: "API Integration", status: "Pending", deadline: "22 Apr" },
-        { title: "Fix Bugs", status: "Completed", deadline: "18 Apr" },
-        { title: "Dashboard UI", status: "Pending", deadline: "25 Apr" },
-        { title: "Code Review", status: "Completed", deadline: "17 Apr" }
-      ]
     }],
     status: "Active"
   },
@@ -31,15 +31,15 @@
     role: "employee",
     department: "Design",
     attendance: "95%",
+    list: [
+      { title: "Design Landing Page", status: "Completed", deadline: "19 Apr" },
+      { title: "Update UI Kit", status: "Pending", deadline: "23 Apr" },
+      { title: "Logo Design", status: "Completed", deadline: "17 Apr" }
+    ],
     tasks: [{
       total: 3,
       completed: 2,
       pending: 1,
-      list: [
-        { title: "Design Landing Page", status: "Completed", deadline: "19 Apr" },
-        { title: "Update UI Kit", status: "Pending", deadline: "23 Apr" },
-        { title: "Logo Design", status: "Completed", deadline: "17 Apr" }
-      ]
     }],
     status: "Active"
   },
@@ -51,16 +51,16 @@
     role: "employee",
     department: "Testing",
     attendance: "88%",
+    list: [
+      { title: "Test Login Module", status: "Completed", deadline: "18 Apr" },
+      { title: "Bug Report", status: "Pending", deadline: "21 Apr" },
+      { title: "Regression Testing", status: "Pending", deadline: "24 Apr" },
+      { title: "API Testing", status: "Completed", deadline: "17 Apr" }
+    ],
     tasks: [{
       total: 4,
       completed: 2,
       pending: 2,
-      list: [
-        { title: "Test Login Module", status: "Completed", deadline: "18 Apr" },
-        { title: "Bug Report", status: "Pending", deadline: "21 Apr" },
-        { title: "Regression Testing", status: "Pending", deadline: "24 Apr" },
-        { title: "API Testing", status: "Completed", deadline: "17 Apr" }
-      ]
     }],
     status: "Inactive"
   },
@@ -72,14 +72,14 @@
     role: "employee",
     department: "HR",
     attendance: "97%",
+    list: [
+      { title: "Employee Onboarding", status: "Completed", deadline: "16 Apr" },
+      { title: "Interview Scheduling", status: "Pending", deadline: "22 Apr" }
+    ],
     tasks: [{
       total: 2,
       completed: 1,
       pending: 1,
-      list: [
-        { title: "Employee Onboarding", status: "Completed", deadline: "16 Apr" },
-        { title: "Interview Scheduling", status: "Pending", deadline: "22 Apr" }
-      ]
     }],
     status: "Active"
   },
@@ -91,18 +91,18 @@
     role: "employee",
     department: "Support",
     attendance: "90%",
+    list: [
+      { title: "Resolve Tickets", status: "Completed", deadline: "18 Apr" },
+      { title: "Customer Support", status: "Pending", deadline: "21 Apr" },
+      { title: "Update FAQs", status: "Completed", deadline: "17 Apr" },
+      { title: "Email Support", status: "Completed", deadline: "19 Apr" },
+      { title: "Live Chat", status: "Pending", deadline: "23 Apr" },
+      { title: "System Check", status: "Completed", deadline: "16 Apr" }
+    ],
     tasks: [{
       total: 6,
       completed: 4,
       pending: 2,
-      list: [
-        { title: "Resolve Tickets", status: "Completed", deadline: "18 Apr" },
-        { title: "Customer Support", status: "Pending", deadline: "21 Apr" },
-        { title: "Update FAQs", status: "Completed", deadline: "17 Apr" },
-        { title: "Email Support", status: "Completed", deadline: "19 Apr" },
-        { title: "Live Chat", status: "Pending", deadline: "23 Apr" },
-        { title: "System Check", status: "Completed", deadline: "16 Apr" }
-      ]
     }],
     status: "Active"
   },
@@ -114,15 +114,15 @@
     role: "employee",
     department: "Marketing",
     attendance: "85%",
-    tasks: [{
-      total: 3,
-      completed: 1,
-      pending: 2,
       list: [
         { title: "Campaign Planning", status: "Pending", deadline: "24 Apr" },
         { title: "Social Media Posts", status: "Completed", deadline: "18 Apr" },
         { title: "Ad Analysis", status: "Pending", deadline: "22 Apr" }
-      ]
+      ],
+    tasks: [{
+      total: 3,
+      completed: 1,
+      pending: 2,
     }],
     status: "Inactive"
   }

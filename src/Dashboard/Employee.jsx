@@ -26,9 +26,13 @@ const Employee = ({data}) => {
 
 
                     <section className="cards">
-                        <div className="card">Tasks<br /><strong>{data.tasks.total}</strong></div>
-                        <div className="card">Completed<br /><strong>{data.tasks.completed}</strong></div>
-                        <div className="card">Pending<br /><strong>{data.tasks.pending}</strong></div>
+                        
+                            
+                        <div className="card">Tasks<br /><strong>{data.tasks[0].total}</strong></div>
+                        <div className="card">Completed<br /><strong>{data.tasks[0].completed}</strong></div>
+                        <div className="card">Pending<br /><strong>{data.tasks[0].pending}</strong></div>
+                        
+                        
                         <div className="card">Attendance<br /><strong>{data.attendance}</strong></div>
                     </section>
 
@@ -42,7 +46,7 @@ const Employee = ({data}) => {
                                 <th>Deadline</th>
                                 <th>Deapartment</th>
                             </tr>
-                            {data.tasks.list.map((task, index) => (
+                            {data?.list?.map((task, index) => (
                                 <tr key={index}>
                                     <td>{task.title}</td>
                                     <td>{task.status}</td>
