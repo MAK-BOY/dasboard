@@ -6,7 +6,7 @@ import Employee from './Dashboard/Employee'
 import { authContext } from './Auth/Auth'
 import { getFromLocalStorage, saveToLocalStorage } from './utils/Localstorage'
 
-
+saveToLocalStorage()
 const App = () => {
   const data = useContext(authContext);
   useEffect(() => {
